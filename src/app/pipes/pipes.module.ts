@@ -7,6 +7,7 @@ import { DatePageComponent } from './pages/date-page/date-page.component';
 import { NumberPageComponent } from './pages/number-page/number-page.component';
 import { OthersPageComponent } from './pages/others-page/others-page.component';
 import {PrimeNgModule} from "../prime-ng/prime-ng.module";
+import { TextPComponent } from './components/text-p/text-p.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import {PrimeNgModule} from "../prime-ng/prime-ng.module";
     TextPageComponent,
     DatePageComponent,
     NumberPageComponent,
-    OthersPageComponent
+    OthersPageComponent,
+    TextPComponent
   ],
   imports: [
     CommonModule,

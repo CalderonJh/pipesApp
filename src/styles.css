@@ -1,2 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "primeflex/primeflex.css";
+
+.code {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 16px;
+}

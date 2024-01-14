@@ -5,6 +5,7 @@ import {CardModule} from "primeng/card";
 import {FieldsetModule} from "primeng/fieldset";
 import {PanelModule} from "primeng/panel";
 import {AccordionModule} from "primeng/accordion";
+import {AvatarModule} from "primeng/avatar";
 
 @NgModule({
   exports:[
@@ -13,7 +14,8 @@ import {AccordionModule} from "primeng/accordion";
     CardModule,
     FieldsetModule,
     PanelModule,
-    AccordionModule
+    AccordionModule,
+    AvatarModule
   ]
 })
 export class PrimeNgModule { }

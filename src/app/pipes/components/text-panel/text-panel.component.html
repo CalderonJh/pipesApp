@@ -1,0 +1,31 @@
+ <p-fieldset [toggleable]="true" [collapsed]="true">
+   <ng-template pTemplate="header">
+     <div class="flex align-items-center gap-2 px-2">
+       <span class="font-bold">Text</span>
+       <i class="pi pi-align-center"></i>
+     </div>
+   </ng-template>
+    <div class="grid">
+    <div class="lg:col-4 sm:col-6">
+      <p-panel header="lowercase">
+        <pipes-text-p _pipe="lowercase"></pipes-text-p>
+        <span class="code">{{ this.text | lowercase }}</span>
+      </p-panel>
+    </div>
+
+    <div class="lg:col-4 sm:col-6">
+      <p-panel header="uppercase">
+        <pipes-text-p _pipe="uppercase"></pipes-text-p>
+        {{ this.text | uppercase }}
+      </p-panel>
+    </div>
+
+    <div class="lg:col-4 md:col-6">
+      <p-panel header="titlecase">
+        <pipes-text-p _pipe="titlecase"></pipes-text-p>
+        {{ this.text | titlecase }}
+      </p-panel>
+    </div>
+    </div>
+  </p-fieldset>
+

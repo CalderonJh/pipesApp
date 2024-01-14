@@ -13,8 +13,8 @@ export class MenuComponent implements OnInit {
     this.items = [
       {
         label: 'Common',
-        icon: 'pi pi-align-left',
-        routerLink: 'text',
+        icon: 'pi pi-shield',
+        routerLink: 'common',
       },
       {
         label: 'Other',

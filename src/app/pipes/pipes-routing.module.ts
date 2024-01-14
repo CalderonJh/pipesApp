@@ -1,30 +1,31 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TextPageComponent } from './pages/text-page/text-page.component';
-import { DatePageComponent } from './pages/date-page/date-page.component';
-import { NumberPageComponent } from './pages/number-page/number-page.component';
 import { OthersPageComponent } from './pages/others-page/others-page.component';
+import { CommonPageComponent } from './pages/common-page/common-page.component';
+import { CustomPageComponent } from './pages/custom-page/custom-page.component';
+import { NotFoundPageComponent } from '../shared/pages/not-found-page/not-found-page.component';
 
 const routes: Routes = [
   {
-    path: 'text',
-    component: TextPageComponent,
-  },
-  {
-    path: 'date',
-    component: DatePageComponent,
-  },
-  {
-    path: 'number',
-    component: NumberPageComponent,
+    path: 'common',
+    component: CommonPageComponent,
   },
   {
     path: 'others',
     component: OthersPageComponent,
   },
   {
+    path: 'custom',
+    component: CustomPageComponent,
+  },
+  {
     path: '',
-    component: TextPageComponent,
+    redirectTo: 'common',
+    pathMatch:'full'
+  },
+  {
+    path: '**',
+    component: NotFoundPageComponent,
   },
 ];
 

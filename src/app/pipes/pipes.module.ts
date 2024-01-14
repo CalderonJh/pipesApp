@@ -10,6 +10,7 @@ import {PrimeNgModule} from "../prime-ng/prime-ng.module";
 import { TextPComponent } from './components/text-p/text-p.component';
 import { CommonPageComponent } from './pages/common-page/common-page.component';
 import { CustomPageComponent } from './pages/custom-page/custom-page.component';
+import { DatePComponent } from './components/date-p/date-p.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { CustomPageComponent } from './pages/custom-page/custom-page.component';
     OthersPageComponent,
     TextPComponent,
     CommonPageComponent,
-    CustomPageComponent
+    CustomPageComponent,
+    DatePComponent
   ],
   imports: [
     CommonModule,

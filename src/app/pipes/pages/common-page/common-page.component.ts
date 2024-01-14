@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './common-page.component.css'
 })
 export class CommonPageComponent {
+  date: Date = new Date();
 
 }

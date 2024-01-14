@@ -10,6 +10,7 @@ export class MenuComponent implements OnInit {
   public items: MenuItem[] | undefined;
 
   ngOnInit(): void {
+    console.log(Date())
     this.items = [
       {
         label: 'Common',
@@ -24,7 +25,7 @@ export class MenuComponent implements OnInit {
       {
         label: 'Custom',
         icon: 'pi pi-cog',
-        routerLink: 'Custom',
+        routerLink: 'custom',
       },
     ];
   }

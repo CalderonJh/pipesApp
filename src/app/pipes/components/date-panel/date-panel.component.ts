@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'pipes-date-page',
+  selector: 'pipes-date-panel',
   templateUrl: './date-panel.component.html',
   styleUrl: './date-panel.component.css'
 })
 export class DatePanelComponent {
 
-  public text:string = '10-10-2020'
+  public date:Date = new Date()
+
 }

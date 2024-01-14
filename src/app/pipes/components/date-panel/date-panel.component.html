@@ -1,22 +1,47 @@
 <div class="grid">
-    <div class="lg:col-4 sm:col-6">
-      <p-panel header="lowercase">
-        <pipes-text-p _pipe="lowercase"></pipes-text-p>
-        <span class="code">{{ this.text | lowercase }}</span>
-      </p-panel>
-    </div>
-
-    <div class="lg:col-4 sm:col-6">
-      <p-panel header="uppercase">
-        <pipes-text-p _pipe="uppercase"></pipes-text-p>
-        {{ this.text | uppercase }}
-      </p-panel>
-    </div>
-
-    <div class="lg:col-4 md:col-6">
-      <p-panel header="titlecase">
-        <pipes-text-p _pipe="titlecase"></pipes-text-p>
-        {{ this.text | titlecase }}
-      </p-panel>
-    </div>
+  <div class="lg:col-4 sm:col-6">
+    <p-panel header="date">
+      <pipes-dates-p _pipe="date"></pipes-dates-p>
+      <span class="code">{{ this.date | date }}</span>
+    </p-panel>
   </div>
+  <div class="lg:col-4 sm:col-6">
+    <p-panel header="month">
+      <pipes-dates-p _pipe="date: 'MMMM'"></pipes-dates-p>
+      <span class="code">{{ this.date | date:'MMMM' }}</span>
+    </p-panel>
+  </div>
+  <div class="lg:col-4 sm:col-6">
+    <p-panel header="year">
+      <pipes-dates-p _pipe="date: 'YYYY'"></pipes-dates-p>
+      <span class="code">{{ this.date | date:'YYYY' }}</span>
+    </p-panel>
+  </div>
+  <div class="lg:col-4 sm:col-6">
+    <p-panel header="short">
+      <pipes-dates-p _pipe="date: 'short'"></pipes-dates-p>
+      <span class="code">{{ this.date | date:'short' }}</span>
+    </p-panel>
+  </div>
+  <div class="lg:col-4 sm:col-6">
+    <p-panel header="long">
+      <pipes-dates-p _pipe="date: 'long'"></pipes-dates-p>
+      <span class="code">{{ this.date | date:'long' }}</span>
+    </p-panel>
+  </div>
+  <div class="lg:col-4 sm:col-6">
+    <p-panel header="format">
+      <pipes-dates-p _pipe="date: 'MMMM dd, yy'"></pipes-dates-p>
+      <span class="code">{{ this.date | date:'MMMM dd, yy' }}</span>
+    </p-panel>
+  </div>
+
+  <div class="col">
+    <p-panel header="timezone and locale">
+      <small class="text-red-200">You must import the corresponding locale data</small>
+      <pipes-dates-p _pipe="date: &quot;dd 'de' MMMM 'del' YYYY ' - ' hh:mm aa&quot; :'GMT-8' :'es-CO' "></pipes-dates-p>
+      <span class="code">{{ this.date | date:"dd 'de' MMMM 'del' YYYY ' - ' hh:mm aa" :'GMT-8': 'es-CO'}}</span>
+    </p-panel>
+  </div>
+
+</div>

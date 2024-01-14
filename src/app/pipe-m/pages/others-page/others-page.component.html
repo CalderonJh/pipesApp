@@ -1,7 +1,7 @@
 <div>
   <div class="grid">
     <div class="col ml-2">
-      <div class="mb-3">
+      <div class="mb-2">
         <p-panel header="i18nSelect">
           <pipes-panel-p
             _var="gender"
@@ -15,7 +15,7 @@
           </div>
         </p-panel>
       </div>
-      <div class="my-3">
+      <div class="my-2">
         <p-panel header="json">
           <pipes-panel-p _var="lengthMap"></pipes-panel-p>
           {{ genderMap }}
@@ -24,7 +24,7 @@
           <pre>{{ lengthMap | json }}</pre>
         </p-panel>
       </div>
-      <div class="my-3">
+      <div class="my-2">
         <p-panel header="async">
           <pipes-panel-p _var="observableTimer"></pipes-panel-p>
           <pre>{{ observableTimer}}</pre>
@@ -35,7 +35,7 @@
       </div>
     </div>
     <div class="col">
-      <div class="mb-3">
+      <div class="mb-2">
         <p-panel header="i18nPlural">
           <pre>{{ simpsons | slice: 0 : simpsons.length }}</pre>
           <pipes-panel-p
@@ -43,7 +43,7 @@
             [_length]="true"
             _pipe="i18nPlural:lengthMap"
           ></pipes-panel-p>
-          <div class="mb-1">{{ simpsons.length | i18nPlural: lengthMap }}</div>
+          <div class="my-2">{{ simpsons.length | i18nPlural: lengthMap }}</div>
           <br />
           <p-button
             (click)="shift()"
@@ -51,7 +51,7 @@
           ></p-button>
         </p-panel>
       </div>
-      <div class="my-3">
+      <div class="my-2">
         <p-panel header="slice">
           <pipes-panel-p _var="simpsonsArray"></pipes-panel-p>
           <pre>{{ simpsons | slice: 0 : simpsons.length }}</pre>

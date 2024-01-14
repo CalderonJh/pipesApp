@@ -6,7 +6,7 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () =>
-      import('./pipes/pipes.module').then((m) => m.PipesModule),
+      import('./pipe-m/pipe.module').then((m) => m.PipeModule),
   },
   {
     path: 'home',

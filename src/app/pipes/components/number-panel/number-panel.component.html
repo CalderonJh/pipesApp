@@ -1,22 +1,22 @@
  <div class="grid">
     <div class="lg:col-4 sm:col-6">
-      <p-panel header="lowercase">
-        <pipes-text-p _pipe="lowercase"></pipes-text-p>
-        <span class="code">{{ this.text | lowercase }}</span>
+      <p-panel header="number">
+        <pipes-panel-p _var="_number" _pipe="number:'1.2-2'"></pipes-panel-p>
+        <span class="code">{{  _number | number:'1.2-2' }}</span>
       </p-panel>
     </div>
 
     <div class="lg:col-4 sm:col-6">
-      <p-panel header="uppercase">
-        <pipes-text-p _pipe="uppercase"></pipes-text-p>
-        {{ this.text | uppercase }}
+      <p-panel header="currency">
+        <pipes-panel-p _var="_number" _pipe="currency:'COP '"></pipes-panel-p>
+        {{  _number | currency:'COP ' }}
       </p-panel>
     </div>
 
     <div class="lg:col-4 md:col-6">
-      <p-panel header="titlecase">
-        <pipes-text-p _pipe="titlecase"></pipes-text-p>
-        {{ this.text | titlecase }}
+      <p-panel header="percent">
+        <pipes-panel-p _var="_percent" _pipe="percent"></pipes-panel-p>
+        {{ _percent | percent }}
       </p-panel>
     </div>
   </div>

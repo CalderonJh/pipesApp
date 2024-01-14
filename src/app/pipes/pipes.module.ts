@@ -7,10 +7,10 @@ import { DatePanelComponent } from './components/date-panel/date-panel.component
 import { NumberPanelComponent } from './components/number-panel/number-panel.component';
 import { OthersPageComponent } from './pages/others-page/others-page.component';
 import {PrimeNgModule} from "../prime-ng/prime-ng.module";
-import { TextPComponent } from './components/text-p/text-p.component';
+import { PanelPComponent } from './components/panel-p/panel-p.component';
 import { CommonPageComponent } from './pages/common-page/common-page.component';
 import { CustomPageComponent } from './pages/custom-page/custom-page.component';
-import { DatePComponent } from './components/date-p/date-p.component';
+
 
 
 @NgModule({
@@ -19,10 +19,9 @@ import { DatePComponent } from './components/date-p/date-p.component';
     DatePanelComponent,
     NumberPanelComponent,
     OthersPageComponent,
-    TextPComponent,
+    PanelPComponent,
     CommonPageComponent,
     CustomPageComponent,
-    DatePComponent
   ],
   imports: [
     CommonModule,

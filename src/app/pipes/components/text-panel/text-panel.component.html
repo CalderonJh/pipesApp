@@ -1,22 +1,22 @@
  <div class="grid">
     <div class="lg:col-4 sm:col-6">
       <p-panel header="lowercase">
-        <pipes-text-p _pipe="lowercase"></pipes-text-p>
-        <span class="code">{{ this.text | lowercase }}</span>
+        <pipes-panel-p _var="text" _pipe="lowercase"></pipes-panel-p>
+        <span class="code">{{ text | lowercase }}</span>
       </p-panel>
     </div>
 
     <div class="lg:col-4 sm:col-6">
       <p-panel header="uppercase">
-        <pipes-text-p _pipe="uppercase"></pipes-text-p>
-        {{ this.text | uppercase }}
+        <pipes-panel-p _var="text" _pipe="uppercase"></pipes-panel-p>
+        {{ text | uppercase }}
       </p-panel>
     </div>
 
     <div class="lg:col-4 md:col-6">
       <p-panel header="titlecase">
-        <pipes-text-p _pipe="titlecase"></pipes-text-p>
-        {{ this.text | titlecase }}
+        <pipes-panel-p _var="text" _pipe="titlecase"></pipes-panel-p>
+        {{ text | titlecase }}
       </p-panel>
     </div>
   </div>

@@ -3,8 +3,9 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'pipes-number-panel',
   templateUrl: './number-panel.component.html',
-  styleUrl: './number-panel.component.css'
+  styles: '',
 })
 export class NumberPanelComponent {
-  public text: string = '1234567890'
+  _number: number  = 2854398.255;
+  _percent: number  = 0.332;
 }

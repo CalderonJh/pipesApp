@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'pipes-date-panel',
   templateUrl: './date-panel.component.html',
-  styleUrl: './date-panel.component.css'
+  styles: ''
 })
 export class DatePanelComponent {
 
